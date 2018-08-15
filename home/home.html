@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="myYellow">
+    <ion-title>
+      <h1>
+        IT Mahanakorn
+      </h1>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content center text-center>
+  <ion-grid style=" justify-content: center;">        
+    <ion-row >
+      <ion-col>
+        <ngx-gauge [type]="gaugeType" [value]="gaugeValueTemp" [label]="gaugeLabelF" [append]="gaugeAppendText" [min]="gaugeMin" [max]="gaugeMax"
+          [size]="gaugeSize" [cap]="gaugeCap" [thick]="gaugeThick" [thresholds]="thresholdConfig">
+        </ngx-gauge>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+        <ion-col><ion-badge color="danger" style="font-size: xx-large">อุณหภูมิ</ion-badge></ion-col>
+    </ion-row>    
+  </ion-grid>
+</ion-content>
